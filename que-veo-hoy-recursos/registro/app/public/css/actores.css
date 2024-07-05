@@ -1,0 +1,179 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-image: linear-gradient(to right, #1A6B74 0%, #358F9B 25%, #1A6B74 50%, #358F9B 75%, #1A6B74 100%);
+    font-family: 'Montserrat', Arial, sans-serif; /* Aplica Montserrat como la fuente principal */
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: scroll; /* Asegura que siempre haya una barra de desplazamiento vertical */
+}
+
+.header-title {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+.actor {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.actor img {
+    width: 150px;
+    height: 200px;
+    border-radius: 15px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.actor:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.popup-body img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.popup-info {
+    text-align: left;
+    margin-top: 10px;
+}
+
+/* Menu Styles */
+.menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que el botón de menú esté por encima de .content */
+}
+
+.menu-button .line {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.content {
+    position: fixed;
+    top: 0;
+    left: -350px; /* Ajusta este valor según el ancho del contenido */
+    width: 300px;  /* Ajusta este valor según el ancho del contenido */
+    height: 100vh;
+    background-color: #204c90;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.4s ease;
+    padding: 70px 20px 20px 20px; /* Ajusta el padding para dejar espacio al botón */
+    margin: 0;
+    border: none;
+    z-index: 1000; /* Asegura que .content esté por encima de otros elementos */
+}
+
+.content .row,
+.content .row a { /* Aplica el mismo estilo a las filas <div> y <a> */
+    display: block; /* Asegura que ambos sean bloques para ocupar el ancho completo */
+    padding: 15px 20px; /* Ajusta el padding para controlar el espacio interno de cada fila */
+    margin-bottom: 10px; /* Añade un margen inferior para separar visualmente las filas */
+    border-bottom: 1px solid #ddd;
+    font-size: 1.5rem;
+    border-radius: 10px; /* Ajusta este valor según sea necesario */
+    background-color: #ffffff; /* Color de fondo sólido para las filas */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #000000; /* Color del texto para el enlace */
+}
+
+.content .row:hover,
+.content .row a:hover { /* Estilo de hover para ambos elementos */
+    background-color: rgb(233, 233, 233);
+}
+
+.content.active {
+    left: 0;
+}
+
+

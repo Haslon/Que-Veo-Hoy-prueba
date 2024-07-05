@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trailers</title>
+  <link rel="stylesheet" href="css/trailer.css">
+  <link rel="stylesheet" type="text/css" href="css/style-cliente.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Añadir Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Botón de menú de tres líneas -->
+  <div class="menu-button" id="menuButton">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+
+  <!-- Filas que se mostrarán al desplegarse -->
+  <div class="content" id="content">
+    <a class="row" href="trailer.html">Trailers</a>
+    <a class="row" href="actores.html">Actores</a>
+    <a class="row" href="login.html">Login</a>
+    <a class="row" href="index.html">Inicio</a>
+    <!--<a class="row" href="../html/login.html">Cerrar Sesion</a>-->
+  </div>
+  <script>document.addEventListener('DOMContentLoaded', function() {
+    var menuButton = document.getElementById('menuButton');
+    var content = document.getElementById('content');
+
+    menuButton.addEventListener('click', function () {
+        content.classList.toggle('active');
+    });
+});
+</script>
+  <div class="container">
+    <h1 style="font-size: 30px;"><i class="fas fa-film" style="font-size: 30px;"></i>Movie Trailers</h1>
+    <div class="trailers" id="trailers">
+      <!-- Trailers will be inserted here by JavaScript -->
+    </div>
+    <a href="cliente" class="btn-film btn-round" role="button">Volver</a>
+  </div>
+<!--PIE DE PAGINA-->
+<div class="footer-container">
+  <!-- Primera sección -->
+  <div class="footer-section" style="margin-left: 30px;">
+      <img src="../img/segundo_logo.png" alt="Imagen de pie de página" style="margin-bottom: 15px;">
+      <div class="footer-section-text">
+          <p>En QueVeoHoy, nos apasiona el cine y las series, brindándote las mejores recomendaciones y calificaciones. Nuestra misión es proporcionar una experiencia excepcional para todos los amantes del cine.</p>
+      </div>
+      <div class="footer-images" style="margin-top: 15px;">
+          <img src="../img/facebook.png" alt="Imagen 1">
+          <img src="../img/wasap.png" alt="Imagen 2">
+          <img src="../img/insta.png" alt="Imagen 3">
+      </div>
+  </div>
+
+  <!-- Segunda sección -->
+  <div class="footer-section" style="margin-top: 10px;">
+      <h4>Categorías</h4>
+      <p>Películas</p>
+      <p>Series</p>
+      <p>Nuevos Estrenos</p>
+      <p>Próximos Lanzamientos</p>
+      <h4 style="margin-top: 20px;">Información</h4>
+      <p>Sobre Nosotros</p>
+      <p>Cómo Funciona</p>
+      <p>Contacto</p>
+      <p>Blog</p>
+  </div>
+
+  <!-- Tercera sección -->
+  <div class="footer-section" style="margin-top: 10px;">
+    <h4>Recursos</h4>
+    <p>Guías y Tutoriales</p>
+    <p>Noticias de Cine</p>
+    <p>Eventos y Festivales</p>
+    <p>Foro de la Comunidad</p>
+    <p>Recomendaciones de la Semana</p>
+  </div>
+
+  <!-- Cuarta sección -->
+  <div class="footer-section" style="margin-top: 10px;">
+    <h4>Soporte</h4>
+    <p>Horario de atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+    <p>Email: soporte@queveohoy.com</p>
+    <p>Teléfono: +123 456 7890</p>
+  </div>
+</div>
+<div class="copyright-container">
+  <p>2024 © TODOS LOS DERECHOS RESERVADOS</p>
+</div>
+  <script src="js/trailer.js"></script>
+</body>
+</html>

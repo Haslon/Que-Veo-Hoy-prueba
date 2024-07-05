@@ -1,0 +1,149 @@
+.containerfooter {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footermain {
+    background-color: #000000;
+    padding: 80px 0;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    width: 20%;
+    padding: 0 30px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 19px;
+    display: inline-block;
+}
+
+.footer-links ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+.social-link a {
+    display: block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all .5s ease;
+}
+
+.social-link a:hover {
+    background-color: #00c3ff;
+}
+
+@media(max-width: 991px) {
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Estilos para la sección de derechos de autor */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    margin-top: 0px;
+    background-color: #358f9b;
+}
+
+.footer-section {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-section img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.footer-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.footer-images img {
+    width: calc(16% - 5px);
+    border-radius: 5px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(221, 213, 213);
+    font-weight: 700;
+}
+
+.footer-section p {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgb(221, 213, 213);
+}
+
+.footer-section:first-child {
+    margin-right: 150px;
+}
+
+.footer-section-text {
+    margin-bottom: 10px;
+    color: rgb(221, 213, 213);
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.1;
+}
+
+.footer-section-text p {
+    font-size: 12px;
+    text-align: justify;
+}
+
+.footer-section:last-child img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.copyright-container {
+    background-color: rgb(5, 5, 5);
+    text-align: center;
+    padding: 15px;
+	width: 100%;
+}
+
+.copyright-container p {
+    margin: 0;
+    font-size: 13px;
+    color: white;
+}

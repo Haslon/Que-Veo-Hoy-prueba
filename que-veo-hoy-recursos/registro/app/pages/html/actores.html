@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Actores</title>
+    <link rel="stylesheet" href="css/actores.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v20.0" nonce="vCKZzZ2i"></script>
+    <div class="main-container">
+        <!-- Botón de menú de tres líneas -->
+        <div class="menu-button" id="menuButton">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <!-- Filas que se mostrarán al desplegarse -->
+        <div class="content" id="content">
+            <a class="row" href="trailer">Trailers</a>
+            <a class="row" href="actores">Actores</a>
+            <a class="row" href="login">Login</a>
+            <a class="row" href="index">Inicio</a>
+            <!--<a class="row" href="../html/login.html">Cerrar Sesion</a>-->
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var menuButton = document.getElementById('menuButton');
+                var content = document.getElementById('content');
+
+                menuButton.addEventListener('click', function() {
+                    content.classList.toggle('active');
+                });
+            });
+        </script>
+
+        <div class="header-title center">
+            <h1>Sobre Actores</h1>
+        </div>
+            <div class="container">
+                <div class="actor" data-name="Tom Hanks" data-age="67" data-movie="Forrest Gump" data-bio="Thomas Jeffrey Hanks es un actor y productor estadounidense.">
+                    <img src="https://elcomercio.pe/resizer/BBaDXBLVcg31iV6ZqhQL6Tit7KM=/980x528/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/GUQSUCC5PRHR5M3IDL7T5DQAUI.jpg" alt="Tom Hanks">
+                </div>
+                <div class="actor" data-name="Meryl Streep" data-age="74" data-movie="The Devil Wears Prada" data-bio="Mary Louise Streep es una actriz y cantante estadounidense.">
+                    <img src="https://negociosyempresa.com/wp-content/uploads/2023/07/frases-de-Meryl-Streep.jpg" alt="Meryl Streep">
+                </div>
+                <div class="actor" data-name="Brad Pitt" data-age="60" data-movie="Fight Club" data-bio="William Bradley Pitt es un actor y productor de cine estadounidense.">
+                    <img src="https://phantom-telva.unidadeditorial.es/ec24e4b09b58f5e1715d13dc024403f5/resize/1280/f/webp/assets/multimedia/imagenes/2023/07/04/16884783365688.jpg" alt="Brad Pitt">
+                </div>
+                <div class="actor" data-name="Angelina Jolie" data-age="49" data-movie="Maleficent" data-bio="Angelina Jolie Voight es una actriz, cineasta y humanitaria estadounidense.">
+                    <img src="https://ucarecdn.com/b1c776c1-31db-45f2-80a0-e54725913fe3/-/crop/709x708/0,58/-/preview/-/progressive/yes/-/format/auto/" alt="Angelina Jolie">
+                </div>
+                <div class="actor" data-name="Robert Downey Jr." data-age="59" data-movie="Iron Man" data-bio="Robert John Downey Jr. es un actor y productor estadounidense.">
+                    <img src="https://d23.com/app/uploads/2019/08/2019-disneylegend-rdj.jpg" alt="Robert Downey Jr.">
+                </div>
+                <div class="actor" data-name="Cate Blanchett" data-age="55" data-movie="Blue Jasmine" data-bio="Catherine Élise Blanchett es una actriz y productora australiana.">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSLyEouugv3s4eeXtxqQtaP9vY1aTTeThB_bqkIc_uPC3vo1wYMjVQavhUP1d0aObHZAj98w7Bx07roag4">
+                </div>
+                <div class="actor" data-name="Morgan Freeman" data-age="86" data-movie="Shawshank Redemption" data-bio="Morgan Freeman es un actor, director y narrador estadounidense y un tio buena voz, no hay mejor actor que Él para hacer de dios.">
+                    <img src="https://www.clarin.com/img/2015/05/11/rJgg-C1RXl_1256x620.jpg" alt="Morgan Freeman">
+                </div>
+                <div class="actor" data-name="Natalie Portman" data-age="42" data-movie="Black Swan" data-bio="Natalie Hershlag, conocida profesionalmente como Natalie Portman, es una actriz y directora israelí-estadounidense.">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRDURmtPSrGnJg3KVsfyONSFUPTxsWlZRfqZvru0NAqUONfzX0MuWnDrOXHVNgvBuWtjkhyG5HF_SVObkc" alt="Natalie Portman">
+                </div>
+                <div class="actor" data-name="Will Smith" data-age="55" data-movie="Men in Black" data-bio="Willard Carroll Smith Jr. es un actor, rapero y productor de cine estadounidense.">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSiEfKtD-MbNCBFD2VOlz2ao1hvjiPDPhFpj75w1o7EsxWCI9MHl4U6qqw9iKVwKEiJYlqSMSPxaFS6hHk" alt="Will Smith">
+                </div>
+                <div class="actor" data-name="Emma Stone" data-age="35" data-movie="La La Land" data-bio="Emily Jean Stone, conocida profesionalmente como Emma Stone, es una actriz estadounidense.">
+                    <img src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTCwH3nwunZp21pwwmZsbr9L4qowsshK929gFleGtpkxk0FEmE_KQRoGJCWNGtsLqyRA7ja3ZXmFMBfz2Q" alt="Emma Stone">
+                </div>
+                <div class="actor" data-name="Tom Cruise" data-age="61" data-movie="Top Gun" data-bio="Thomas Cruise Mapother IV, conocido como Tom Cruise, es un actor y productor de cine estadounidense.">
+                    <img src="https://variety.com/wp-content/uploads/2023/07/GettyImages-1511406162.jpg?w=1000&h=667&crop=1&resize=1360%2C907" alt="Tom Cruise">
+                </div>
+                <div class="actor" data-name="Jennifer Lawrence" data-age="33" data-movie="The Hunger Games" data-bio="Jennifer Shrader Lawrence es una actriz estadounidense.">
+                    <img src="https://resize.elle.fr/square_960_webp/var/plain_site/storage/images/beaute/news-beaute/beaute-des-stars/jennifer-lawrence-se-confie-sur-les-rumeurs-d-injections-dont-elle-est-victime-4181925/100868312-1-fre-FR/Jennifer-Lawrence-se-confie-sur-les-rumeurs-d-injections-dont-elle-est-victime.jpg" alt="Jennifer Lawrence">
+                </div>
+                <div class="actor" data-name="Dwayne Johnson" data-age="52" data-movie="Jumanji" data-bio="Dwayne Douglas Johnson, conocido como The Rock, es un actor, productor y luchador profesional retirado estadounidense. estuvo por cambiar el universo dc pero el cgi le jugó en contra">
+                    <img src="https://ca-times.brightspotcdn.com/dims4/default/e3e909a/2147483647/strip/true/crop/3456x5184+0+0/resize/1200x1800!/format/webp/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F77%2Ff4%2Fc34540544b3b80dc0e0b5354ff28%2F459362-et-0717-johnson-mwy-0081.JPG" alt="Dwayne Johnson">
+                </div>
+                <div class="actor" data-name="Leonardo Dicaprio" data-age="49" data-movie=" Titanic" data-bio="Leonardo DiCaprio es un reconocido actor y productor estadounidense, famoso por sus roles en películas icónicas como Titanic y The Revenant, por la cual ganó un Premio de la Academia. También es conocido por su activismo en la conservación del medio ambiente a través de su fundación">
+                    <img src="https://www.investopedia.com/thmb/HaTvkAN-nMqo7Gj1YizrFI3Un6o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-1357365947-bcc184856e5b4738bb78797fe930b557.jpg" alt="Leonardo Dicaprio">
+                </div>
+            <!-- Agrega más actores según sea necesario -->
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-body">
+                <img id="popup-image" src="" alt="Actor">
+                <div class="popup-info">
+                    <h2 id="popup-name"></h2>
+                    <p id="popup-age"></p>
+                    <p id="popup-movie"></p>
+                    <p id="popup-bio"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--PIE DE PAGINA-->
+    <div id="footer-container" class="footer-container">
+    <!-- Primera sección -->
+    <div class="footer-section" style="margin-left: 30px;">
+        <img src="../img/segundo_logo.png" alt="Imagen de pie de página" style="margin-bottom: 15px;">
+        <div class="footer-section-text">
+            <p>En QueVeoHoy, nos apasiona el cine y las series, brindándote las mejores recomendaciones y calificaciones. Nuestra misión es proporcionar una experiencia excepcional para todos los amantes del cine.</p>
+        </div>
+        <div class="footer-images" style="margin-top: 15px;">
+            <img src="../img/facebook.png" alt="Imagen 1">
+            <img src="../img/wasap.png" alt="Imagen 2">
+            <img src="../img/insta.png" alt="Imagen 3">
+        </div>
+    </div>
+  
+    <!-- Segunda sección -->
+    <div class="footer-section" style="margin-top: 10px;">
+        <h4>Categorías</h4>
+        <p>Películas</p>
+        <p>Series</p>
+        <p>Nuevos Estrenos</p>
+        <p>Próximos Lanzamientos</p>
+        <h4 style="margin-top: 20px;">Información</h4>
+        <p>Sobre Nosotros</p>
+        <p>Cómo Funciona</p>
+        <p>Contacto</p>
+        <p>Blog</p>
+    </div>
+  
+    <!-- Tercera sección -->
+    <div class="footer-section" style="margin-top: 10px;">
+      <h4>Recursos</h4>
+      <p>Guías y Tutoriales</p>
+      <p>Noticias de Cine</p>
+      <p>Eventos y Festivales</p>
+      <p>Foro de la Comunidad</p>
+      <p>Recomendaciones de la Semana</p>
+    </div>
+  
+    <!-- Cuarta sección -->
+    <div class="footer-section" style="margin-top: 10px;">
+      <h4>Soporte</h4>
+      <p>Horario de atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+      <p>Email: soporte@queveohoy.com</p>
+      <p>Teléfono: +123 456 7890</p>
+    </div>
+  </div>
+  <div class="copyright-container">
+    <p>2024 © TODOS LOS DERECHOS RESERVADOS</p>
+  </div>
+    <script src="js/actores.js"></script>
+</body>
+</html>

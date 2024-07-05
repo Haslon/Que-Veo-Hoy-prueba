@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(90deg, #2d2d94, #49b1b1); /* Azul fuerte y cyan fuerte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container-all {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+}
+
+.ctn-form {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7a7a7a;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    color: #49b1b1; /* Cyan fuerte */
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    color: white;
+    border: 0;
+    background: linear-gradient(90deg, #2d2d94, #49b1b1); /* Azul fuerte y cyan fuerte */
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #49b1b1, #2d2d94); /* Cyan fuerte y azul fuerte */
+}
+
+.text-footer {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.text-footer a {
+    color: #029EE1;
+    font-weight: 500;
+}
+
+.ctn-text {
+    width: 50%;
+    background-image: url(../img/movie.jpg); /* Solo mantener la imagen como fondo */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.title-description {
+    position: relative;
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    z-index: 1;
+}
+
+.text-description {
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+    z-index: 1;
+}
+
+.msg-error {
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+.ctn-welcome {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    margin-top: 100px;
+    background: white;
+    border-radius: 20px;
+}
+
+.logo-welcome {
+    width: 200px;
+    margin: 20px;
+}
+
+.title-welcome {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.title-welcome b {
+    color: #2d2d94; /* Azul fuerte */
+}
+
+.close-sesion {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #2d2d94, #49b1b1); /* Azul fuerte y cyan fuerte */
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.close-sesion:hover {
+    background: linear-gradient(90deg, #49b1b1, #2d2d94); /* Cyan fuerte y azul fuerte */
+}
+
+@media screen and (max-width: 800px) {
+    .container-all {
+        flex-direction: column;
+    }
+    .ctn-text {
+        width: 100%;
+        height: 200px;
+        padding: 20px;
+    }
+    .ctn-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .title-welcome {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+}

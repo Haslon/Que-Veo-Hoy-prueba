@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-image: radial-gradient(circle at 111.24% 85.36%, #626dcd 0, #736bddfc 50%, #7e91f0 100%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Valera Round', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px; /* Añadir margen inferior para separación */
+}
+
+/* Estilos para los tráilers */
+.trailers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.trailer {
+  width: 45%; /* Ajustar el ancho para que quepan dos en una fila */
+  max-width: 400px; /* Máximo ancho para cada tráiler */
+  background-color: #222;
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Espacio entre tráilers */
+}
+
+.trailer img {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trailer-content {
+  margin-top: 15px; /* Espacio entre la imagen y el texto */
+}
+
+.trailer h2 {
+  font-size: 18px;
+  margin: 0 0 10px 0; /* Ajustar el margen para separar el título del video */
+}
+
+.trailer p {
+  font-size: 14px;
+  margin: 0; /* Ajustar el margen para separar la descripción */
+}
+
+.btn-film {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.btn-film:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .trailer {
+    width: 100%; /* Un tráiler por fila en pantallas más pequeñas */
+  }
+}
